@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --accentColor: #d12c20;
+    --darkAccentColor: #7e0606;
+    --lightAccentColor: #f7f1ec;
+    --midTone: #ffdfa7;
+    --black: #151515;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: "IM Fell Great Primer", Georgia, Times, serif;
+    font-style: normal;
+    margin: 0;
+    color: var(--accentColor);
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    background-color: var(--accentColor);
+
+}
+
+#navbar {
+    max-width: 1400px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar a img {
+    width: 200px;
+    height: auto;
+}
+
+#weatherWidget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--darkAccentColor);
+    color: var(--white);
+    font-size: .75rem;
+    width: 100%;
+}
+
+#weatherWidget h2 {
+    color: var(--midTone);
+}
+
+
+#weatherIcon {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    padding: .5rem;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-family: "IM Fell Great Primer", Georgia, Times, serif;
+    color: var(--lightAccentColor);
+}
+
+nav ul li a {
+    height: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: .2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: var(--lightAccentColor);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #222;
+    background-color: var(--lightAccentColor);
+    cursor: pointer;
+}
+
+
+
+footer {
+    background-color: var(--lightAccentColor);
+    font-family: "IM Fell Great Primer", Georgia, Times, serif;
+}
+
+footer section {
+    padding: 2rem;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: .5rem;
+    padding: 0;
+    
+}
+
+footer ul li a {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+    text-align: center;
+}
+
+footer ul li a:hover {
+    color: var(--accentColor);
+}
+
+footer section a img {
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    #navbar {
+        padding: .5rem 1rem;
+    }
+
+    #navbar a img {
+        width: 150px;
+        height: auto;
+    }
+
+    nav ul li a, footer ul li a {
+        padding: 1rem .25rem;
+        font-size: .9rem;
+    }
+
+    footer section {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: row;
+    }
+
+    footer section a img {
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width:480px) {
+    nav ul li a, footer ul li a {
+        padding: 1rem 0rem;
+        font-size: .8rem;
+    }
+
+    nav {
+        padding: 0rem;
+    }
+
+    #navbar a img {
+        width: 200px;
+        height: auto;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #weatherWidget {
+        font-size: .6rem;
+    }
+
+}
