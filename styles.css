@@ -561,6 +561,8 @@ section section ul {
 
   #notesSection {
     max-width: 80ch;
+    font-size: .8rem;
+    line-height: .8;
   }
   
   #diningSection {
