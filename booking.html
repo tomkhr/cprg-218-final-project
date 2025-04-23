@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shangri-La Beach Resort - Homepage</title>
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <section id="weatherWidget">
+            <img id="weatherIcon" src="" alt="" width="40" height="40">
+            
+                <h2 id="weatherTitle"></h2>
+                <p id="temp"></p>
+                <p id="wind"></p>
+            
+        </section>
+
+        <section id="navbar">
+            <a href="/"><img src="/assets/logo.svg" width="200" height="100"></img></a>
+
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/activities-and-excursions.html">Activities & Excursions</a></li>
+                    <li><a href="/guest-rooms.html">Guest Rooms</a></li>
+                    <li><a href="/spa.html">Spa</a></li>
+                    <li><a href="dining.html">Dining</a></li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+
+
+    <main>
+
+      <section id="bookingSection">
+        <h1>Book Now!</h1>
+        <h2>Reserve your space at Shangri-La</h2>
+        <p>Fields marked with an * are mandatory</p>
+      
+        <form>
+          <label for="checkin">Check-in Date *</label>
+          <input type="date" id="checkin" name="checkin" required>
+      
+          <label for="checkout">Check-out Date *</label>
+          <input type="date" id="checkout" name="checkout" required>
+      
+          <label for="roomType">Room Type *</label>
+          <select id="roomType" name="roomType" required>
+            <option value="">-- Select a Room Type --</option>
+            <option value="ocean-view-deluxe-room">Ocean View Deluxe Room</option>
+            <option value="beachfront-suite">Beachfront Suite</option>
+            <option value="garden-view-family-room">Garden View Family Room</option>
+            <option value="premium-oceanfront-suite">Premium Oceanfront Suite</option>
+            <option value="accessible-room">Accessible Room</option>
+          </select>
+      
+          <button type="submit" class="btnPrimary">Submit</button>
+        </form>
+      </section>
+
+    </main>
+
+
+    <footer>
+        <section>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/activities-and-excursions.html">Activities & Excursions</a></li>
+            <li><a href="/guest-rooms.html">Guest Rooms</a></li>
+            <li><a href="/spa.html">Spa</a></li>
+            <li><a href="/dining.html">Dining</a></li>
+            <li><a href="/testimonials.html">Testimonials</a></li>
+            <li><a href="/booking.html">Book Now</a></li>
+        </ul>
+            <a href="/"><img src="/assets/logo-red.svg" width="200" height="100"></img></a>
+            <p>Shangri-La Hotels 2025. All rights reserved ©</p>
+        </section>
+    </footer>
+
+</body>
+
+    <script src="script.js"></script>
+</html>
