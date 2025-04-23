@@ -2,7 +2,7 @@ console.log("TEST!")
 
 // Navbar active class
 
-const currentPath = window.location.pathname.replace("/", "");
+const currentPath = window.location.pathname.slice(1);
 const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {
