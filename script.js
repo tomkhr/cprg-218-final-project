@@ -2,11 +2,12 @@ console.log("TEST!")
 
 // Navbar active class
 
-const currentPath = window.location.pathname;
+const currentPath = window.location.pathname.replace("/", "");
 const navLinks = document.querySelectorAll('nav ul li a');
 
 navLinks.forEach(link => {
-  if (link.getAttribute('href') === currentPath) {
+  const linkPath = link.getAttribute('href');
+  if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
     link.classList.add('active');
   }
 });
